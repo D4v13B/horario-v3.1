@@ -31,8 +31,12 @@ header {
 
 header h2 {
     color: #F1FAEE;
+    margin: 10px;
     font-weight: 500;
     font-size: 5.625vw;
+    animation-name: movimiento;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 
@@ -115,7 +119,7 @@ footer div a{
 }
 
 footer div a:hover {
-    color: #8bfbff;
+    color: #AEC6E8;
 }
 
 @media screen and (max-width:852px) {
