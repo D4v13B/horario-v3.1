@@ -26,7 +26,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*color: #F1FAEE;*/
 }
 
 header h2 {
@@ -34,7 +33,6 @@ header h2 {
     margin: 10px;
     font-weight: 500;
     font-size: 5.625vw;
-    animation-name: movimiento;
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
@@ -96,7 +94,7 @@ header h2 {
 
 footer {
     width: 100%;
-    height: 125px;
+    height: 110px;
     background: #1D3557;
     display: flex;
     flex-direction: column;
@@ -124,7 +122,8 @@ footer div a:hover {
 }
 
 footer h2 { 
-    font-size: 18px
+    font-size: 12px;
+    order: 2;
 }
 
 footer p {
@@ -132,8 +131,12 @@ footer p {
 }
 
 @media screen and (max-width:852px) {
-    header h2 {
+    header {
         width: 100%;
+    }
+    
+    header h2 {
+        font-size: 36px;
     }
 }
 
@@ -143,6 +146,5 @@ footer p {
     }
     footer {
         text-align: center;
-        height: 140px;
     }
 }
