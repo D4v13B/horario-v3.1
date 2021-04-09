@@ -86,7 +86,6 @@ header h2 {
 }
 
 .btn:hover {
-    transform: scale(1.2);
     text-decoration: underline;
 }
 
@@ -121,7 +120,6 @@ footer div a:hover {
 
 footer h2 { 
     font-size: 12px;
-    order: 2;
 }
 
 footer p {
