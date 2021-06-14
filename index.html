@@ -17,66 +17,82 @@
 </head>
 <body>
     <header>
-        <h2 class="texto">Horario Virtual</h2>
-        <ul>
-            <a href="https://zoom.us/j/5568084350?pwd=cUFoSm9IUVdkUjc4bXZuYjRBT1RkUT09" class="btn">Sala de Reuniones</a>
+        <div class="h2">
+            <h2 class="texto">Horario Virtual</h2>
+        </div>
+        <ul class="sala-de-reunion">
+            <a href="https://zoom.us/j/5568084350?pwd=cUFoSm9IUVdkUjc4bXZuYjRBT1RkUT09" class="SDR">Sala de Reuniones</a>
         </ul>
-    </header>
-    <main class="content">
-        <div class="sesiones">
-            <div class="caja">
-                <h2>Consejería</h2>
-                <a target="_blank" href="https://us02web.zoom.us/j/85987532498?pwd=ZXFqT21iTm14V2NUbTI0ZE1PaVpuQT09" class="btn">Iniciar</a>
-            </div>
-            <div class="caja">
-                <h2>Matemáticas</h2>
-                <a target="_blank" href="https://us02web.zoom.us/j/4554300565?pwd=a0Q5anJwTWlaTlhDUFp5TllhU3lvZz09" class="btn">Iniciar</a>
-            </div>
-            <div class="caja">
-                <h2>Español</h2>
-                <a target="_blank" href="https://us04web.zoom.us/j/6509608074?pwd=NmJpdUdrRUtmN0ZMRUFVWWRIZ1JCZz09" class="btn">Iniciar</a>
-            </div>
-            <div class="caja">
-                <h2>Fisíca</h2>
-                <a target="_blank" href="https://zoom.us/j/5383238600?pwd=ckVEdjJrQ1pFeU9ZOVpQY0ZMdVhOZz09" class="btn">Iniciar</a>
-            </div>
-            <div class="caja">
-                <h2>Química</h2>
-                <a target="_blank" href="https://zoom.us/j/2467689149?pwd=SmRIYXg3OEowWFAyZFRWd2RaR2tMdz09" class="btn">Iniciar</a>
-            </div>
-            <div class="caja">
-                <h2>Historia</h2>
-                <a target="_blank" href="https://us02web.zoom.us/j/8562968489?pwd=VHJCZUprTm1YSjltYWhPNjMyRE8vdz09" class="btn">Iniciar</a>
-            </div>
-            <div class="caja">
-                <h2>Religión</h2>
-                <a target="_blank" href="https://us02web.zoom.us/j/85987532498?pwd=ZXFqT21iTm14V2NUbTI0ZE1PaVpuQT09" class="btn">Iniciar</a>
-            </div>
-            <div class="caja">
-                <h2>English</h2>
-                <a target="_blank" href="https://us04web.zoom.us/j/78555421605?pwd=a0grSExBSm5oakx6b1NrY2FqczMzUT09" class="btn">Iniciar</a>
-            </div>
-            <div class="caja">
-                <h2>Control Electromecánico</h2>
-                <a target="_blank" href="https://us02web.zoom.us/j/88236879624?pwd=bFRoUFl3dDNnZFlXZVJSTEYwa2pKUT09" class="btn">Iniciar</a>
-            </div>
-            <div class="caja">
-                <h2>Fundamentos Eléctricos</h2>
-                <a target="_blank" href="https://us02web.zoom.us/j/2536053516?pwd=a0dGSmdtR0w0a0tEUEQ1aW91MXNyUT09" class="btn">Iniciar</a>
-            </div>
-             <div class="caja">
-                <h2>Misa</h2>
-                <a target="_blank" href="https://us02web.zoom.us/j/85427481355?pwd=OE9sRGx3c01SbmpKQmc3czlWL2N3dz09" class="btn">Iniciar</a>
-            </div>
-        </main>
-        <footer>
-            <div class="social-links">
-                <a target="_blank" href="https://github.com/ZMonchoX"><i class="fab fa-github"></i></a>
-                <a target="_blank" href="https://www.instagram.com/02.daviid/"><i class="fab fa-instagram"></i></a>
-            </div class="derechos">
-                <!--<p>Todo los derechos reservados &copy;|David Bustamante</p>-->
-                <p>&copy; 2021, David Bustamante|All rights reserved</p>
-        </footer>
+        <!--TOOOOOOODOOOOOOOOOOOOOOOO-->
+        <div class="to-do-list" id="to-do-list">
+            <h2>Cosas que hacer</h2>
+            <form id="formTask">
+                <input type="text" id="title" class="controls" placeholder="Add a To do" >
+            
+                <textarea id="description" class="controls" placeholder="Add a description"></textarea>
+            
+                <button type="submit" class="btn-form">Guardar</button>
+            </form>
+        <div class="task-container" id="tasks"></div>
+        <!--TOOOOOOODOOOOOOOOOOOOOOOO-->
     </div>
+    
+    <!--<div class="nav__toggle" id="nav-toggle">
+        <i class="fas fa-list-alt"><label for="i"> Cosas que hacer</label></i>
+    </div>-->
+
+    <!--<script src="js/localStoragedemo.js"></script>-->
+    
+</header>
+<main class="content">
+    <div class="sesiones">
+        <div class="caja">
+            <h2>Consejería</h2>
+            <a target="_blank" href="https://us02web.zoom.us/j/85987532498?pwd=ZXFqT21iTm14V2NUbTI0ZE1PaVpuQT09" class="btn">Iniciar</a>
+        </div>
+        <div class="caja">
+            <h2>Matemáticas</h2>
+            <a target="_blank" href="https://us02web.zoom.us/j/4554300565?pwd=a0Q5anJwTWlaTlhDUFp5TllhU3lvZz09" class="btn">Iniciar</a>
+        </div>
+        <div class="caja">
+            <h2>Español</h2>
+            <a target="_blank" href="https://us04web.zoom.us/j/6509608074?pwd=NmJpdUdrRUtmN0ZMRUFVWWRIZ1JCZz09" class="btn">Iniciar</a>
+        </div>
+        <div class="caja">
+            <h2>Fisíca</h2>
+            <a target="_blank" href="https://zoom.us/j/5383238600?pwd=ckVEdjJrQ1pFeU9ZOVpQY0ZMdVhOZz09" class="btn">Iniciar</a>
+        </div>
+        <div class="caja">
+            <h2>Química</h2>
+            <a target="_blank" href="https://zoom.us/j/2467689149?pwd=SmRIYXg3OEowWFAyZFRWd2RaR2tMdz09" class="btn">Iniciar</a>
+        </div>
+        <div class="caja">
+            <h2>Historia</h2>
+            <a target="_blank" href="https://us02web.zoom.us/j/8562968489?pwd=VHJCZUprTm1YSjltYWhPNjMyRE8vdz09" class="btn">Iniciar</a>
+        </div>
+        <div class="caja">
+            <h2>Religión</h2>
+            <a target="_blank" href="https://us02web.zoom.us/j/85987532498?pwd=ZXFqT21iTm14V2NUbTI0ZE1PaVpuQT09" class="btn">Iniciar</a>
+        </div>
+        <div class="caja">
+            <h2>English</h2>
+            <a target="_blank" href="https://us04web.zoom.us/j/78555421605?pwd=a0grSExBSm5oakx6b1NrY2FqczMzUT09" class="btn">Iniciar</a>
+        </div>
+        <div class="caja">
+            <h2>Control Electromecánico</h2>
+            <a target="_blank" href="https://us02web.zoom.us/j/88236879624?pwd=bFRoUFl3dDNnZFlXZVJSTEYwa2pKUT09" class="btn">Iniciar</a>
+        </div>
+        <div class="caja">
+            <h2>Fundamentos Eléctricos</h2>
+            <a target="_blank" href="https://us02web.zoom.us/j/2536053516?pwd=a0dGSmdtR0w0a0tEUEQ1aW91MXNyUT09" class="btn">Iniciar</a>
+        </div>
+        <div class="caja">
+            <h2>Misa</h2>
+            <a target="_blank" href="https://us02web.zoom.us/j/85427481355?pwd=OE9sRGx3c01SbmpKQmc3czlWL2N3dz09" class="btn">Iniciar</a>
+        </div>
+    </div>
+</main>
 </body>
 </html>
+
+<!--<script src="js/showToDo.js"></script>-->
